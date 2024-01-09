@@ -18,7 +18,6 @@ permissions:
   contents: read
 
 jobs:
-  if: false
   #Build, test and publish .net web project in repository
   buildandtest:
     runs-on: ubuntu-latest
