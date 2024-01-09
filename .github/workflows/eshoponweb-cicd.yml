@@ -80,8 +80,7 @@ jobs:
         #creds: ${{ secrets.AZURE_CREDENTIALS }}
         client-id: ${{ secrets.USERMANAGED }}
         tenant-id: ${{ env.AZURE_TENANT_ID }}
-        subscriptionId: ${{ env.SUBSCRIPTION-ID }}
-        resourceGroupName: ${{ env.RESOURCE-GROUP }}
+        subscription-id: ${{ env.SUBSCRIPTION-ID }} 
     # Deploy Azure WebApp using Bicep file
     - name: deploy
       uses: azure/arm-deploy@v1
